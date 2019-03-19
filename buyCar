@@ -37,19 +37,23 @@
 			/*alert(nums[i].value);*/
 			totalNum+=parseInt(nums[i].value);
 		}
-		document.getElementsByName("totalNum").innerHTML=totalNum;
+		/*改成用Id赋值后就可以了，奇怪*/
+		/*document.getElementById("totalNum").innerHTML="hello"
+		document.getElementById("totalNum").innerHTML=totalNum;
+		alert(document.getElementById("totalNum").innerHTML);*/
+		document.getElementById("totalNum").innerHTML=totalNum;
 
 		var price=document.getElementsByName('xiaoji');
 		var totalPrice=0;
 		for(var i=0;i<price.length;i++){
 			totalPrice+=parseFloat(price[i].value);
 		}
-		document.getElementsByName("totalPrice").innerHTML=totalPrice;
+		document.getElementById("totalPrice").innerHTML=totalPrice;
 	}
 
 	</script>
 </head>
-	<body>
+	<body  onload="show()">
 		<ul class="num">
 			<li>$<input type="text" name="price" value="21.9"/></li>
 			<li>
@@ -69,17 +73,17 @@
 			<li>$<input type="text" name="xiaoji" value="25"/></li>
 		</ul>
 		<ul class="num">
-			<li>$<input type="text" name="price" value="25"/></li>
+			<li>$<input type="text" name="price" value="18.5"/></li>
 			<li>
 				<input type="button" name="" value="-" onclick="minus(2)">
 				<input type="text" name="number" value="1">
 				<input type="button" name="" value="+" onclick="plus(2)">
 			</li>
-			<li>$<input type="text" name="xiaoji" value="25"/></li>
+			<li>$<input type="text" name="xiaoji" value="18.5"/></li>
 		</ul>
-
-			合计数量：<span name="totalNum" ></span>
-			合计金额：<span name="totalPrice"></span>
+			
+			合计数量：<span id="totalNum">0</span>
+			合计金额：<span id="totalPrice">0</span>
 			
 
 	</body>
