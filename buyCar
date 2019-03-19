@@ -58,7 +58,7 @@
 			<li>$<input type="text" name="price" value="21.9"/></li>
 			<li>
 				<input type="button" name="" value="-"onclick="minus(0)">
-				<input type="text" name="number" value="1">
+				<input type="text" name="number" value="1" disabled="disabled">
 				<input type="button" name="" value="+" onclick="plus(0)">
 			</li>
 			<li>$<input type="text" name="xiaoji" value="21.9"/></li>
@@ -67,7 +67,7 @@
 			<li>$<input type="text" name="price" value="25"/></li>
 			<li>
 				<input type="button" name="" value="-" onclick="minus(1)">
-				<input type="text" name="number" value="1">
+				<input type="text" name="number" value="1" disabled="disabled">
 				<input type="button" name="" value="+" onclick="plus(1)">
 			</li>
 			<li>$<input type="text" name="xiaoji" value="25"/></li>
@@ -76,7 +76,7 @@
 			<li>$<input type="text" name="price" value="18.5"/></li>
 			<li>
 				<input type="button" name="" value="-" onclick="minus(2)">
-				<input type="text" name="number" value="1">
+				<input type="text" name="number" value="1" disabled="disabled">
 				<input type="button" name="" value="+" onclick="plus(2)">
 			</li>
 			<li>$<input type="text" name="xiaoji" value="18.5"/></li>
